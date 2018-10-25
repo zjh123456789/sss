@@ -5,7 +5,7 @@ public class bubbleSort {
     public static void main(String[] args) {
 
         int[] arr = {5,4,3,2,1};
-        System.out.println("原始数组uuuuuuu0uu: " );
+        System.out.println("原始数组: " );
         print(arr);
         System.out.println("开启冒泡模式:小数渐渐浮出水面: ");
         bubble(arr);
