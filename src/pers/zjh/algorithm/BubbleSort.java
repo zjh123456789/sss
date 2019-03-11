@@ -7,7 +7,7 @@ package pers.zjh.algorithm;
  * @date 2019/3/11 16:06
  * @version 1.0
  */
-public class bubbleSort {
+public class BubbleSort {
 
     public static void main(String[] args) {
 

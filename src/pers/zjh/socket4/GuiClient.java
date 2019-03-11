@@ -1,26 +1,26 @@
+
 package pers.zjh.socket4;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.net.ServerSocket;
 import java.net.Socket;
-
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class GUIServer {
+public class GuiClient {
 
     public static void main(String[] args) throws Exception {
 
         JFrame f = new JFrame();
-        f.setTitle("server");
+        f.setTitle("client");
 
         f.setSize(400, 300);
-        f.setLocation(100, 200);
+        f.setLocation(600, 200);
         f.setLayout(null);
 
         JButton b = new JButton("send");
@@ -38,22 +38,22 @@ public class GUIServer {
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
 
-        ServerSocket ss = new ServerSocket(8888);
+        final Socket s = new Socket("127.0.0.1", 8888);
 
-        System.out.println("listenning on port:8888");
-        final Socket s =  ss.accept();
         new Thread() {
-                    public void run() {
-                        while (true) {
-                            try {
-                                DataInputStream dis = new DataInputStream(
-                                        s.getInputStream());
-                                String text = dis.readUTF();
-                                ta.append(text+"\r\n");
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-                        }
+            @Override
+            public void run() {
+                while (true) {
+                    try {
+                        DataInputStream dis = new DataInputStream(
+                                s.getInputStream());
+                        String text = dis.readUTF();
+                        ta.append(text+"\r\n");
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+
             }
         }.start();
 

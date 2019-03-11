@@ -9,7 +9,7 @@ package pers.zjh.algorithm;
 public class QuickSort {
 
     public static void main(String[] args) {
-        int a[] = {3,4,6,1,2,5};
+        int[] a = {3,4,6,1,2,5};
 
         System.out.println("before sort: ");
         for (int i=0; i<a.length; i++){

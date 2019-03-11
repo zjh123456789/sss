@@ -14,6 +14,7 @@ public class SendThread extends Thread{
         this.socket = socket;
     }
 
+    @Override
     public void run(){
         try {
             OutputStream outputStream = socket.getOutputStream();

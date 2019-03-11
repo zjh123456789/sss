@@ -13,6 +13,7 @@ public class ReceiveThread extends Thread {
         this.socket = socket;
     }
 
+    @Override
     public void run(){
         try {
             InputStream inputStream = socket.getInputStream();

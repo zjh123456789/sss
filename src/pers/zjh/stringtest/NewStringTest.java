@@ -1,4 +1,4 @@
-package pers.zjh.stringTest;
+package pers.zjh.stringtest;
 
 /**
  * Created by admin on 2018/10/30
