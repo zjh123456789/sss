@@ -1,5 +1,12 @@
 package pers.zjh.algorithm;
 
+/**
+ * 冒泡排序算法
+ *
+ * @author 朱景辉
+ * @date 2019/3/11 16:06
+ * @version 1.0
+ */
 public class bubbleSort {
 
     public static void main(String[] args) {
@@ -11,6 +18,12 @@ public class bubbleSort {
         bubble(arr);
     }
 
+
+    /**
+     * 冒泡排序
+     *
+     * @param array 待排序的数组
+     */
     public static void bubble(int[] array){
         for (int i=1; i<array.length; i++){
             for (int j=0; j<array.length-i; j++){
@@ -25,7 +38,11 @@ public class bubbleSort {
         }
     }
 
-    // 输出数组
+    /**
+     * 打印数组
+     *
+     * @param array 待打印的数组
+     */
     public static void print(int[] array){
         for (int a : array) {
             System.out.print(a + " ");
