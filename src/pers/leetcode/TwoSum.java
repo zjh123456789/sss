@@ -19,8 +19,6 @@ public class TwoSum {
         for (int i=0; i<test.length; i++){
             System.out.println(test[i]);
         }
-
-        int[] test2 = leetcode(a, target);
     }
 
     /**
@@ -46,6 +44,13 @@ public class TwoSum {
         return result;
     }
 
+    /**
+     * 快速解法
+     *
+     * @param nums 给出数组
+     * @param target 目标和
+     * @return 两数下标
+     */
     public static int[] leetcode(int[] nums, int target){
         Map<Integer, Integer> others = new HashMap<Integer, Integer>(nums.length);
         for (int i=0; i<nums.length; i++){
