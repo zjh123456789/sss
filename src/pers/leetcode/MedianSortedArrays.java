@@ -1,7 +1,8 @@
 package pers.leetcode;
 
 /**
- * 求两个数组的中位数
+ * LeetCode 04   Median of Two Sorted Arrays
+ * 难易程度: Hard
  *
  * @author admin
  * @date 2019/3/14 9:25

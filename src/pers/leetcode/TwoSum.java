@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * LeetCode 第一题 难易程度: Easy
+ * LeetCode 01 Two Sum
+ * 难易程度: Easy
  *
  * @author admin
  * @date 2019/3/11 16:15
