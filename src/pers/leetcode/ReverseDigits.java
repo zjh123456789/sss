@@ -1,7 +1,7 @@
 package pers.leetcode;
 
 /**
- * LeetCode 07 反转整数
+ * LeetCode 07 翻转整数
  * 难度: Easy
  *
  * @author admin
@@ -10,34 +10,28 @@ package pers.leetcode;
 public class ReverseDigits {
 
     public static void main(String[] args) {
-        int a = -2147483648;
+        System.out.println("Integer 类型最小值: " + Integer.MIN_VALUE);
+        System.out.println("Integer 类型最大值: " + Integer.MAX_VALUE);
+        int a = -2143648;
         System.out.println(reverse(a));
     }
 
     /**
      * 反转一个 32 - bit 的带符号整数
-     * @param x
-     * @return
+     * @param x int 型值
+     * @return 反转后的值
      */
     public static int reverse(int x){
-        int output = 0;
-        StringBuilder ss = new StringBuilder("");
-        if (x > (2 << 30 - 1) || x < -(2 << 30) || x == 0){
-            return output;
-        } else {
-            if (x < 0){
-                ss.append("-");
-            }
-            int a = Math.abs(x);
-            String s = a + "";
-            for (int i = s.length() - 1; i >= 0; i--){
-                ss.append(s.charAt(i));
-            }
+        int rev = 0;
+        while (x != 0){
+            int pop = x % 10;
+            x /= 10;
+            if (rev > Integer.MAX_VALUE/10 || rev == Integer.MAX_VALUE/10 && pop > 7)
+                return 0;
+            if (rev < Integer.MIN_VALUE/10 || rev == Integer.MIN_VALUE/10 && pop < (-8))
+                return 0;
+            rev = rev * 10 + pop;
         }
-        output = Integer.parseInt(ss.toString());
-        if (output > (2 << 30 - 1) || output < -(2 << 30)){
-            output = 0;
-        }
-        return output;
+        return rev;
     }
 }
