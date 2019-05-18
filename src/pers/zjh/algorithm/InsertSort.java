@@ -3,7 +3,7 @@ package pers.zjh.algorithm;
 /**
  * 插入排序算法
  *
- * @author admin
+ * @author jinghui.zhu
  * @date 2019/3/11 15:22
  */
 public class InsertSort {

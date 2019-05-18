@@ -3,7 +3,7 @@ package pers.zjh.algorithm;
 /**
  * 选择排序算法
  *
- * @author admin
+ * @author jinghui.zhu
  * @date 2019/3/11 14:54
  */
 public class QuickSort {
