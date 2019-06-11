@@ -1,4 +1,4 @@
-package pers.zjh.design_pattern.factory;
+package pers.zjh.design_pattern.simple_factory;
 
 /**
  * ${todo}
