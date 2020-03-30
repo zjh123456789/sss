@@ -2,11 +2,10 @@ package pers.zjh.pratice.stringtest;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Random;
+
 
 /**
+ * string 测试类
  * Created by jinghui.zhu on 2018/10/30
  */
 public class NewStringTest {
