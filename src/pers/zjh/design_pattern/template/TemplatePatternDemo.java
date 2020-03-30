@@ -1,7 +1,10 @@
 package pers.zjh.design_pattern.template;
 
 /**
- * ${todo}
+ * 模板模式：一个抽象类公开定义了执行它的方法的模式。它的子类可以按照需要重写方法实现，但调用将以抽象类中
+ * 定义的方式进行。
+ *
+ * --行为型模式--
  *
  * @author jinghui.zhu@luckincoffee.com
  * @date 2019/5/29 17:22

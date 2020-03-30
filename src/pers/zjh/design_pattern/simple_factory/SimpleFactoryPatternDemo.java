@@ -1,7 +1,7 @@
 package pers.zjh.design_pattern.simple_factory;
 
 /**
- * ${todo}
+ * 简单工厂模式
  *
  * @author jinghui.zhu@luckincoffee.com
  * @date 2019/5/14 17:27

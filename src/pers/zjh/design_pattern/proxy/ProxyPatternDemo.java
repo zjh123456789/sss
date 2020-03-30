@@ -1,7 +1,9 @@
 package pers.zjh.design_pattern.proxy;
 
 /**
- * ${todo}
+ * 代理模式：一个类代表另一个类的功能
+ *
+ * -- 结构型模式 --
  *
  * @author jinghui.zhu@luckincoffee.com
  * @date 2019/5/27 18:39
