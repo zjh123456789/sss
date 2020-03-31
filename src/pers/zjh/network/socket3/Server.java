@@ -1,4 +1,4 @@
-package pers.zjh.pratice.socket3;
+package pers.zjh.network.socket3;
 
 import java.io.IOException;
 import java.net.ServerSocket;

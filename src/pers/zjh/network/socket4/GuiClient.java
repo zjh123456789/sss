@@ -1,5 +1,5 @@
 
-package pers.zjh.pratice.socket4;
+package pers.zjh.network.socket4;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

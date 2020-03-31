@@ -1,4 +1,4 @@
-package pers.zjh.pratice.socket;
+package pers.zjh.network.socket;
 
 import java.io.*;
 import java.net.ServerSocket;

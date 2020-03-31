@@ -1,4 +1,4 @@
-package pers.zjh.pratice.stringtest;
+package pers.zjh.data_structure.string;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
