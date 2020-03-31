@@ -1,14 +1,14 @@
 package pers.zjh.design_pattern.simple_factory;
 
 /**
- * ${todo}
+ * 动物工厂 - 工厂类角色 - 根据逻辑不同，产生具体的工厂产品
  *
  * @author jinghui.zhu@luckincoffee.com
  * @date 2019/5/14 17:22
  */
 public class AnimalFactory {
 
-    public Animal createAnimal(String animalSpecies){
+    public static Animal createAnimal(String animalSpecies){
         if (animalSpecies == null){
             return null;
         }
@@ -23,4 +23,5 @@ public class AnimalFactory {
         }
         return null;
     }
+
 }

@@ -1,7 +1,9 @@
 package pers.zjh.design_pattern.decorator;
 
 /**
- * 测试Demo
+ * 装饰器模式：允许向一个现有的对象添加新的功能，同时又不改变其结构。
+ *
+ * -- 结构型模式 --
  *
  * @author jinghui.zhu@luckincoffee.com
  * @date 2019/5/23 19:13

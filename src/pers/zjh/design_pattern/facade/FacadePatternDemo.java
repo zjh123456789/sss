@@ -1,7 +1,9 @@
 package pers.zjh.design_pattern.facade;
 
 /**
- * 测试用例Demo
+ * 外观模式：隐藏系统的复杂性，并向客户端提供了一个客户端可以访问系统的接口。
+ *
+ * -- 结构型模式 --
  *
  * @author jinghui.zhu@luckincoffee.com
  * @date 2019/6/11 19:10
