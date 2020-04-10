@@ -19,7 +19,7 @@ public class HashMapThread extends Thread {
         while (atomicInteger.get() < 1000000) {
             map.put(atomicInteger.get(), atomicInteger.get());
             atomicInteger.incrementAndGet();
-            System.out.println(atomicInteger.get());
+            System.out.println(this.getName() + ": " + atomicInteger.get());
         }
     }
 }
