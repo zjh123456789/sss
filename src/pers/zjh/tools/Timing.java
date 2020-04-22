@@ -17,7 +17,7 @@ public class Timing {
         // 本月第一天
         DateTime periodEndTime = new DateTime(new Date()).withDayOfMonth(1).withTime(0, 0, 0, 0);
 
-        System.out.println("ssss " + periodStartTime);
+        System.out.println("上月第一天 " + periodStartTime);
 
         // 当前时间
         Date now = new Date();
@@ -35,7 +35,14 @@ public class Timing {
         int tian = (int) (days / (1400 * 60 * 60 * 24));
         System.out.println("天数: " + tian);
 
-
         System.out.println("一天包含多少秒: " + 24*3600);
+
+
+        // 查找距离此刻 - 7 天
+        DateTime dateTime = new DateTime();
+        Date startTime = dateTime.minusDays(7).withTimeAtStartOfDay().toDate();
+        Date endTime = dateTime.minusDays(6).withTimeAtStartOfDay().toDate();
+        System.out.println("7天前时间: " + startTime + "  6天前时间: " + endTime);
+
     }
 }
