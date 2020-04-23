@@ -44,5 +44,8 @@ public class Timing {
         Date endTime = dateTime.minusDays(6).withTimeAtStartOfDay().toDate();
         System.out.println("7天前时间: " + startTime + "  6天前时间: " + endTime);
 
+
+        System.out.println(new Date());
+        System.out.println(new Date().toString());
     }
 }
