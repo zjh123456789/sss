@@ -12,16 +12,16 @@ public class InsertSort {
         int[] a = {2,4,3,1,6,5};
 
         System.out.println("before sort: ");
-        for (int i=0; i<a.length; i++){
-            System.out.printf("%d ",a[i]);
+        for (int value : a) {
+            System.out.printf("%d ", value);
         }
         System.out.printf("%n");
 
         insertSort(a, a.length);
 
         System.out.println("after sort: ");
-        for (int i=0; i<a.length; i++){
-            System.out.printf("%d ",a[i]);
+        for (int value : a) {
+            System.out.printf("%d ", value);
         }
     }
 
@@ -31,7 +31,7 @@ public class InsertSort {
      * @param a 待排序的数组
      * @param n 数组的长度
      */
-    public static void insertSort(int[] a, int n){
+    private static void insertSort(int[] a, int n){
         int i, j, k;
 
         for (i = 1; i<n; i++){

@@ -24,7 +24,7 @@ public class BubbleSort {
      *
      * @param array 待排序的数组
      */
-    public static void bubble(int[] array){
+    private static void bubble(int[] array){
         for (int i=1; i<array.length; i++){
             for (int j=0; j<array.length-i; j++){
                 if(array[j]>array[j+1]){
@@ -43,7 +43,7 @@ public class BubbleSort {
      *
      * @param array 待打印的数组
      */
-    public static void print(int[] array){
+    private static void print(int[] array){
         for (int a : array) {
             System.out.print(a + " ");
         }

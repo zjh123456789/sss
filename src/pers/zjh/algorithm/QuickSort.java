@@ -32,7 +32,7 @@ public class QuickSort {
      * @param l 数组的左边界(例如, 从起始位置开始排序, 则l=0)
      * @param r 数组的右边界(例如, 排序截至到数组末尾, 则r=a.length-1)
      */
-    public static void quickSort(int[] a, int l, int r){
+    private static void quickSort(int[] a, int l, int r){
         if (l < r){
             int i = l;
             int j = r;

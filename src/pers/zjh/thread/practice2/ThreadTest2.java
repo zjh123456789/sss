@@ -1,5 +1,7 @@
 package pers.zjh.thread.practice2;
 
+import java.math.BigDecimal;
+
 /**
  * {todo}
  *
@@ -9,6 +11,14 @@ package pers.zjh.thread.practice2;
 public class ThreadTest2 {
 
     public static void main(String[] args) {
-        System.out.println("ddd");
+        System.out.println(System.nanoTime());
+
+        BigDecimal a = BigDecimal.valueOf(10.4);
+
+        System.out.println("a: " + a);
+
+        BigDecimal b = a.multiply(BigDecimal.valueOf(0.01));
+
+        System.out.println("b: " + b);
     }
 }
