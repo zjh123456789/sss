@@ -12,16 +12,16 @@ public class QuickSort {
         int[] a = {3,4,6,1,2,5};
 
         System.out.println("before sort: ");
-        for (int i=0; i<a.length; i++){
-            System.out.printf("%d ",a[i]);
+        for (int item : a) {
+            System.out.printf("%d ", item);
         }
         System.out.printf("%n");
 
         quickSort(a, 0, a.length-1);
 
         System.out.println("after sort: ");
-        for (int i=0; i<a.length; i++){
-            System.out.printf("%d ",a[i]);
+        for (int value : a) {
+            System.out.printf("%d ", value);
         }
     }
 
@@ -51,9 +51,9 @@ public class QuickSort {
                 a[j--] = a[i];
             }
             a[i] = x;
-            quickSort(a,l,i-1);
-            quickSort(a,i+1,r);
+            quickSort(a, l, i-1);
+            quickSort(a, i+1, r);
         }
-
     }
+
 }
