@@ -1,4 +1,4 @@
-package pers.zjh.leetcode.string;
+package pers.zjh.algorithm.leetcode.string;
 
 import java.util.ArrayList;
 import java.util.List;

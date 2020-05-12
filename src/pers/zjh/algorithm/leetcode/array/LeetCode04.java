@@ -1,4 +1,4 @@
-package pers.zjh.leetcode.array;
+package pers.zjh.algorithm.leetcode.array;
 
 /**
  * 求两个排序数组的中位数      Median of Two Sorted Arrays

@@ -1,4 +1,4 @@
-package pers.zjh.leetcode.array;
+package pers.zjh.algorithm.leetcode.array;
 
 import java.util.HashMap;
 import java.util.Map;

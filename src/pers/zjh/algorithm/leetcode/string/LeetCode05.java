@@ -1,4 +1,4 @@
-package pers.zjh.leetcode.string;
+package pers.zjh.algorithm.leetcode.string;
 
 /**
  * 最长回文子串   Longest Palindromic Substring

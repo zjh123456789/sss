@@ -1,4 +1,4 @@
-package pers.zjh.leetcode.math;
+package pers.zjh.algorithm.leetcode.math;
 
 /**
  * 判断回文数字   Palindrome Number

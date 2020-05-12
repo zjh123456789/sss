@@ -1,4 +1,4 @@
-package pers.zjh.leetcode.string;
+package pers.zjh.algorithm.leetcode.string;
 
 /**
  * 最长公共前缀   Longest Common Prefix

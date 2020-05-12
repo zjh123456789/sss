@@ -1,4 +1,4 @@
-package pers.zjh.leetcode.math;
+package pers.zjh.algorithm.leetcode.math;
 
 /**
  * LeetCode 07 翻转整数

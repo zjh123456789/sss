@@ -1,4 +1,4 @@
-package pers.zjh.leetcode.math;
+package pers.zjh.algorithm.leetcode.math;
 
 /**
  * 字符串转整数   String to Integer

@@ -14,6 +14,8 @@ public class HashMapThread extends Thread {
     private AtomicInteger atomicInteger = new AtomicInteger();
     private Map<Integer, Integer> map = new HashMap<>();
 
+    Order order = new Order();
+
     @Override
     public void run() {
         while (atomicInteger.get() < 1000000) {

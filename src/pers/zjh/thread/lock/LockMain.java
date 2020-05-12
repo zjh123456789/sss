@@ -33,6 +33,7 @@ public class LockMain {
         // 启动线程t0
         t0.start();
         Thread.sleep(10);
+        System.out.println("当前线程: " + Thread.currentThread().getName());
         // 启动线程t1
         t1.start();
         Thread.sleep(100);

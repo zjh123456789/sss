@@ -1,4 +1,4 @@
-package pers.zjh.leetcode.linked_list;
+package pers.zjh.algorithm.leetcode.linked_list;
 
 
 /**
