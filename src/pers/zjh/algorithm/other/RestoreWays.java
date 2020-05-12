@@ -7,6 +7,13 @@ package pers.zjh.algorithm.other;
      arr[0] <= arr[1]
      arr[n-1] <= arr[n-2]
      arr[i] <= max(arr[i-1], arr[i+1])
+
+     但是在arr有些数字丢失了，
+     比如k位置的数字之前是正数，丢失之后k位置的数字为0。
+     计算可能有多少种不同的arr可以满足以上条件。
+     比如[6,0,9]只有还原成 [6,9,9]满足全部三个条件，
+     所以返回1种。
+
  *
  * @author 朱景辉
  * @createTime 2020/5/13 0:06
