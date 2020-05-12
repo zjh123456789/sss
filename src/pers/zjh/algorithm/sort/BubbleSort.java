@@ -1,4 +1,4 @@
-package pers.zjh.algorithm;
+package pers.zjh.algorithm.sort;
 
 /**
  * 冒泡排序算法

@@ -1,4 +1,4 @@
-package pers.zjh.algorithm;
+package pers.zjh.algorithm.sort;
 
 /**
  * 选择排序算法

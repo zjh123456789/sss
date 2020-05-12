@@ -1,4 +1,4 @@
-package pers.zjh.algorithm;
+package pers.zjh.algorithm.other;
 
 import java.util.Scanner;
 
