@@ -47,5 +47,12 @@ public class Timing {
 
         System.out.println(new Date());
         System.out.println(new Date().toString());
+
+        Date ddd = null;
+        System.out.println(ddd);
+
+        System.out.println(new DateTime(ddd));
+        System.out.println(new DateTime(new Date()));
+        System.out.println(new DateTime(new DateTime(new Date()).plusDays(1).toDate()));
     }
 }
