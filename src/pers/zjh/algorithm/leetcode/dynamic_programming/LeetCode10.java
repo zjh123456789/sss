@@ -4,7 +4,7 @@ package pers.zjh.algorithm.leetcode.dynamic_programming;
  * 正则表达式匹配  Regular Expression Matching
  * difficulty: Hard
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @date 2019/3/21 9:49
  */
 public class LeetCode10 {

@@ -6,7 +6,7 @@ package pers.zjh.algorithm.other;
  *
  * 进阶：如果交换代价很昂贵，有没有更好一些的办法？
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @createTime 2020/5/12 23:29
  */
 public class RotateString {
@@ -20,14 +20,14 @@ public class RotateString {
 
     // 在 str 上, 如果认为str[l...m]是左部分, str[m+1...r]是右部分
     // 请原地调整, 只能用有限几个变量, 左 -> 右  右 -> 左
-    public static String process1(char[] str, int l, int m, int r) {
+    private static String process1(char[] str, int l, int m, int r) {
         reverse(str, l, m);
         reverse(str, m + 1, r);
         reverse(str, l, r);
         return String.valueOf(str);
     }
 
-    public static void reverse(char[] str, int l, int r) {
+    private static void reverse(char[] str, int l, int r) {
         while (l < r) {
             char temp = str[l];
             str[l++] = str[r];
@@ -35,6 +35,7 @@ public class RotateString {
         }
     }
 
+    // 当两个对象交换代价很大时，可采用这种方法
     public static String rotate2(String s, int leftSize) {
         if (leftSize <= 0 || leftSize >= s.length()) {
             return  s;
@@ -62,7 +63,7 @@ public class RotateString {
         return String.valueOf(str);
     }
 
-    public static void exchange(char[] str, int l, int r, int size) {
+    private static void exchange(char[] str, int l, int r, int size) {
         int i = r - l + 1;
         char temp = 0;
         while (size-- != 0) {

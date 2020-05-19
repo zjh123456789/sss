@@ -3,7 +3,7 @@ package pers.zjh.algorithm.sort;
 /**
  * 冒泡排序算法
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @date 2019/3/11 16:06
  * @version 1.0
  */

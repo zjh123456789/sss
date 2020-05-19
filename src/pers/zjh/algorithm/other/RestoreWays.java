@@ -15,7 +15,7 @@ package pers.zjh.algorithm.other;
      所以返回1种。
 
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @createTime 2020/5/13 0:06
  */
 public class RestoreWays {

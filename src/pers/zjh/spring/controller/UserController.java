@@ -5,7 +5,7 @@ import pers.zjh.spring.service.UserService;
 /**
  * {todo}
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @createTime 2020/4/29 20:12
  */
 public class UserController {

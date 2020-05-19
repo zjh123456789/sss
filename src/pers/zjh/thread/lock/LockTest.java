@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 对比 lock() 和 lockInterruptibly()
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @createTime 2020/4/19 8:54
  */
 public class LockTest {

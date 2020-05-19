@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 /**
  * {todo}
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @createTime 2020/4/11 21:15
  */
 public class ThreadTest2 {

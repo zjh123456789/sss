@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * 计算字符串中含有的不同字符的个数，字符在 ACSII 码范围内（0~127），不在范围的不作统计
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @createTime 2020/3/31 21:07
  */
 public class CountNumberCharDifference {

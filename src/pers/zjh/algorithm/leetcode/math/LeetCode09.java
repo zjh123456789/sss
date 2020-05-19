@@ -4,7 +4,7 @@ package pers.zjh.algorithm.leetcode.math;
  * 判断回文数字   Palindrome Number
  * difficulty: Easy
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @date 2019/3/20 11:39
  */
 public class LeetCode09 {

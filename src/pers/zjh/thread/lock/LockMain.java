@@ -3,7 +3,7 @@ package pers.zjh.thread.lock;
 /**
  * main
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @createTime 2020/4/19 9:10
  */
 public class LockMain {

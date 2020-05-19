@@ -4,7 +4,7 @@ package pers.zjh.algorithm.leetcode.math;
  * 字符串转整数   String to Integer
  * difficulty: Medium
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @date 2019/3/20 10:35
  */
 public class LeetCode08 {

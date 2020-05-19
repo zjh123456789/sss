@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * ReentrantLock 练手
  *
- * @author 朱景辉
+ * @author jinghui.zhu
  * @createTime 2020/3/24 22:11
  */
 public class TestThread {
