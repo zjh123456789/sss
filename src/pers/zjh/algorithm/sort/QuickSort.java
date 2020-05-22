@@ -1,7 +1,7 @@
 package pers.zjh.algorithm.sort;
 
 /**
- * 选择排序算法
+ * 快速排序算法
  *
  * @author jinghui.zhu
  * @date 2019/3/11 14:54
