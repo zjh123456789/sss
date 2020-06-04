@@ -10,13 +10,13 @@ import java.util.concurrent.locks.ReentrantLock;
  * @author jinghui.zhu
  * @createTime 2020/3/24 22:11
  */
-public class TestThread {
+public class testThread {
 
     private ArrayList<Integer> arrayList = new ArrayList<>();
     private Lock lock = new ReentrantLock();    // 注意此处
 
     public static void main(String[] args) {
-        final TestThread testThread = new TestThread();
+        final testThread testThread = new testThread();
 
         new Thread() {
             public void run() {
