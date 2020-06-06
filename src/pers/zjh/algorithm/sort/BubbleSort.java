@@ -29,18 +29,30 @@ public class BubbleSort {
      * @param array 待排序的数组
      */
     private static void bubble(int[] array){
-        for (int i=1; i<array.length; i++){
-            for (int j=0; j<array.length-i; j++){
-                if(array[j]>array[j+1]){
-                    int temp = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = temp;
+        for (int i = 1; i < array.length; i++){
+            for (int j = 0; j < array.length - i; j++){
+                if(array[j] > array[j+1]){
+                    swap(array, j, j + 1);
                 }
             }
-            System.out.println("第"+i+"趟冒泡结果为:");
+            System.out.println("第" + i + "趟冒泡结果为:");
             print(array);
         }
     }
+
+    /**
+     * 交换数组中两个元素的位置
+     *
+     * @param arr   数组
+     * @param i     一个下标
+     * @param j     另一个下标
+     */
+    private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
 
     /**
      * 打印数组
