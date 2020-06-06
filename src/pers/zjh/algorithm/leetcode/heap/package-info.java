@@ -11,10 +11,6 @@
  * HEAPSORT：借由 HEAPFY 建堆和 HEAPPOP 堆数组进行排序，时间复杂度为 O(n\ log\ n)O(n log n)，空间复杂度为 O(1)O(1)。
  * 堆结构的一个常见应用是建立优先队列（Priority Queue）。
  *
- * 链接：https://leetcode-cn.com/tag/heap/
- * 来源：力扣（LeetCode）
- * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
- *
  * @author jinghui.zhu@luckincoffee.com
  * @date 2020/5/13 17:18:37
  */
