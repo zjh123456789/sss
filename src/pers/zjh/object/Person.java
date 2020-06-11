@@ -27,13 +27,21 @@ public class Person {
     private int age;
 
     public static void main(String[] args) {
-        Person a = null;
+        Person a = new Person();
+        a.setName("风");
+        a.setAge(90);
+        a.setId(999);
+        System.out.println(a);
         setProperty(a);
         System.out.println(a);
+
+        Person b = null;
+        System.out.println(b);
+        setProperty(b);
+        System.out.println(b);
     }
 
     private static void setProperty(Person person) {
-        person = new Person();
         person.setName("张楚岚");
         person.setAge(20);
     }
