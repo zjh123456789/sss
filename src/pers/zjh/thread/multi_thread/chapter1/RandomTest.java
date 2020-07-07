@@ -1,4 +1,4 @@
-package pers.zjh.thread.multi_thread.test1;
+package pers.zjh.thread.multi_thread.chapter1;
 
 /**
  * 线程的调用随机性测试
