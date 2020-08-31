@@ -2,6 +2,8 @@ package pers.zjh.lambda;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 /**
  * @author jinghui.zhu@luckincoffee.com
  * @date 2020/4/23 14:12:01
@@ -11,5 +13,5 @@ public class User {
 
     private String name;
 
-    private Integer age;
+    private BigDecimal age;
 }
