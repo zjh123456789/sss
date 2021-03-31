@@ -10,6 +10,6 @@ public class MyThread extends Thread {
     @Override
     public void run() {
         super.run();
-        System.out.println("MyThread");
+        System.out.println("MyThread: " + Thread.currentThread().getName());
     }
 }
