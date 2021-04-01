@@ -26,11 +26,21 @@ public class Run {
 //        isAliveDemo.start();
 //        System.out.println("end == " + isAliveDemo.isAlive());
 
-        // sleep() 方法
-        SleepThreadDemo sleepThreadDemo = new SleepThreadDemo();
-        System.out.println("begin " + System.currentTimeMillis());
-        sleepThreadDemo.run();
-        // sleepThreadDemo.start();
-        System.out.println("end " + System.currentTimeMillis());
+//        // sleep() 方法
+//        SleepThreadDemo sleepThreadDemo = new SleepThreadDemo();
+//        System.out.println("begin " + System.currentTimeMillis());
+//        sleepThreadDemo.run();
+//        // sleepThreadDemo.start();
+//        System.out.println("end " + System.currentTimeMillis());
+
+        // interrupt() 方法
+        try {
+            InterruptThreadDemo interruptThreadDemo = new InterruptThreadDemo();
+            interruptThreadDemo.start();
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            System.out.println("main catch");
+            e.printStackTrace();
+        }
     }
 }
