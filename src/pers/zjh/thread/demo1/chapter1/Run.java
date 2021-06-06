@@ -33,13 +33,44 @@ public class Run {
 //        // sleepThreadDemo.start();
 //        System.out.println("end " + System.currentTimeMillis());
 
-        // interrupt() 方法
+//        // interrupt() 方法
+//        try {
+//            InterruptThreadDemo interruptThreadDemo = new InterruptThreadDemo();
+//            interruptThreadDemo.start();
+//            Thread.sleep(2000);
+//        } catch (InterruptedException e) {
+//            System.out.println("main catch");
+//            e.printStackTrace();
+//        }
+
+//        // interrupted() 方法
+//        try {
+//            InterruptedThreadDemo interruptedThreadDemo = new InterruptedThreadDemo();
+//            interruptedThreadDemo.start();
+//            Thread.sleep(1000);
+//            // Thread.currentThread().interrupt();
+//            interruptedThreadDemo.interrupt();
+//            System.out.println("是否停止1 : " + interruptedThreadDemo.interrupted());
+//            System.out.println("是否停止2 : " + interruptedThreadDemo.interrupted());
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+
+//        // 使 main 线程产生中断效果
+//        Thread.currentThread().interrupt();
+//        System.out.println("是否停止1 : " + Thread.interrupted());
+//        System.out.println("是否停止2 : " + Thread.interrupted());
+//        System.out.println("end");
+
+        // isInterrupted()
         try {
-            InterruptThreadDemo interruptThreadDemo = new InterruptThreadDemo();
-            interruptThreadDemo.start();
-            Thread.sleep(2000);
+            InterruptedThreadDemo interruptedThreadDemo = new InterruptedThreadDemo();
+            interruptedThreadDemo.start();
+            Thread.sleep(1000);
+            interruptedThreadDemo.interrupt();
+            System.out.println("是否停止1 : " + interruptedThreadDemo.isInterrupted());
+            System.out.println("是否停止2 : " + interruptedThreadDemo.isInterrupted());
         } catch (InterruptedException e) {
-            System.out.println("main catch");
             e.printStackTrace();
         }
     }
