@@ -1,5 +1,7 @@
 package pers.zjh.algorithm.leetcode.linked_list;
 
+import java.util.List;
+
 /**
  * 合并有序链表   Merge Two Sorted Lists
  * difficulty: Easy
@@ -17,13 +19,37 @@ public class LeetCode21 {
         ListNode l2 = new ListNode(1);
         l2.next = new ListNode(3);
         l2.next.next = new ListNode(4);
-
-        ListNode result = mergeTwoLists(l1, l2);
+//
+//        ListNode result = mergeTwoLists(l1, l2);
+//
+        ListNode result = mergeTwoSortedList(l1, l2);
 
         System.out.println("合并后链表为: ");
         while (result != null){
             System.out.println(result.val);
             result = result.next;
+        }
+    }
+
+    /**
+     * 递归解法
+     * @param l1    有序链表1
+     * @param l2    有序链表2
+     * @return  合并后的有序链表
+     */
+    public static ListNode mergeTwoSortedList(ListNode l1, ListNode l2) {
+        if (null == l1) {
+            return l2;
+        }
+        if (null == l2) {
+            return l1;
+        }
+        if (l1.val <= l2.val) {
+            l1.next = mergeTwoLists(l1.next, l2);
+            return l1;
+        } else {
+            l2.next = mergeTwoLists(l1, l2.next);
+            return l2;
         }
     }
 
